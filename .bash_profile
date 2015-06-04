@@ -7,7 +7,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
 fi
 
 # osx
-if [ $OS = "Mac" ]; then
+if [ $OS = "OSX" ]; then
   source ~/.osx
 fi
 
