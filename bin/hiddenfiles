@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# ----------------------------------------
+# 隠しファイル表示/非表示 切替 for OSX
+# ----------------------------------------
+
+show()  {
+	defaults write com.apple.finder AppleShowAllFiles TRUE
+	killall Finder
+}
+
+hide()  {
+	defaults write com.apple.finder AppleShowAllFiles FALSE
+	killall Finder
+}
+
+case "$1" in
+	show) 	show;;
+	hide) 	hide;;
+	*) 
+		echo -e "show, hide"
+	;;
+esac

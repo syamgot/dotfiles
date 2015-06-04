@@ -1,0 +1,6 @@
+
+# composer
+if [ -d ~/.composer/vendor/bin ]; then
+  export PATH=~/.composer/vendor/bin:$PATH
+fi
+
