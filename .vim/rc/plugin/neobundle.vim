@@ -4,26 +4,6 @@
 " 
 
 
-" \ 'build' : {
-" \     'windows' : 'tools\\update-dll-mingw',
-" \     'cygwin' : 'make -f make_cygwin.mak',
-" \     'mac' : 'make -f make_mac.mak',
-" \     'linux' : 'make',
-" \     'unix' : 'gmake',
-" \    },
-" \ }
-
-let g:os = 'unix'
-let g:make = 'gmake'
-if has('mac')
-  let g:os = 'mac'
-  let g:make = 'make -f make_mac.mak'
-elseif system('uname -o') =~ '^GNU/'
-  let g:os = 'linux'
-  let g:make = 'make'
-endif
-
-
 
 
 
@@ -44,6 +24,14 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " plugins
+NeoBundle 'Shougo/vimproc', {
+  \ 'build' : {
+    \ 'windows' : 'make -f make_mingw32.mak',
+    \ 'cygwin' : 'make -f make_cygwin.mak',
+    \ 'mac' : 'make -f make_mac.mak',
+    \ 'unix' : 'make -f make_unix.mak',
+  \ },
+\ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neocomplete'
@@ -51,8 +39,6 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/vimfiler.vim'
-NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'Shougo/vimproc.vim', {'build': {g:os : g:make}}
 NeoBundle 'thinca/vim-qfreplace'
 
 " editor
