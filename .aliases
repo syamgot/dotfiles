@@ -11,18 +11,5 @@ alias lla='ll -a'
 
 
 
-# mv2trash 
-if [ $OS = "OSX" ]; then
-  if [ ! -f ~/bin/mv2trash ]; then
-    echo "download mv2trash!"
-    curl -L https://raw.githubusercontent.com/dankogai/osx-mv2trash/master/bin/mv2trash > ~/bin/mv2trash
-    chmod a+x ~/bin/mv2trash
-  fi
-  if [ -x ~/bin/mv2trash ]; then
-    alias rm='~/bin/mv2trash'
-  fi
-fi
-
-
 
 
