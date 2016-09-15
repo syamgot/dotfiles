@@ -19,3 +19,5 @@ git clone https://github.com/seebi/dircolors-solarized colors/dircolors-solarize
 
 . ./link.sh
 
+. ~/.bash_profile
+
