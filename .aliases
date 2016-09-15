@@ -1,9 +1,9 @@
 
 # ls
 if [ $OS = "OSX" ]; then
-  alias ls='ls -G'
+	alias ls='ls -G'
 elif [ $OS = "Linux" ]; then
-  alias ls='ls --color=auto' 
+	alias ls='ls --color=auto' 
 fi
 alias ll='ls -l'
 alias la='ls -a'
