@@ -1,14 +1,14 @@
 
 # OS check
 if [ "$(uname)" == 'Darwin' ]; then
-  OS='OSX'
+	OS='OSX'
 elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
-  OS='Linux'
+	OS='Linux'
 fi
 
 # osx
 if [ $OS = "OSX" ]; then
-  source ~/.osx
+	source ~/.osx
 fi
 
 # .bashrc 

@@ -1,20 +1,20 @@
 
 # MacPorts.
 if [ -d /opt/local/bin ]; then
-  export PATH=/opt/local/bin:$PATH
+	export PATH=/opt/local/bin:$PATH
 fi
 if [ -d /opt/local/sbin ]; then
-  export PATH=/opt/local/sbin:$PATH
+	export PATH=/opt/local/sbin:$PATH
 fi
 
 
 # mv2trash 
 if [ ! -f ~/bin/mv2trash ]; then
-  echo "download mv2trash!"
-  curl -L https://raw.githubusercontent.com/dankogai/osx-mv2trash/master/bin/mv2trash > ~/bin/mv2trash
-  chmod a+x ~/bin/mv2trash
+	echo "download mv2trash!"
+	curl -L https://raw.githubusercontent.com/dankogai/osx-mv2trash/master/bin/mv2trash > ~/bin/mv2trash
+	chmod a+x ~/bin/mv2trash
 fi
 if [ -x ~/bin/mv2trash ]; then
-  alias rm='~/bin/mv2trash'
+	alias rm='~/bin/mv2trash'
 fi
 
