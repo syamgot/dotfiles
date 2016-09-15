@@ -16,17 +16,10 @@ if [ -f ~/.bashrc ] ; then
 . ~/.bashrc
 fi
 
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
 # Load the shell dotfiles, and then some:
 for file in ~/.{aliases,exports,colors,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-
-
-# Make vim the default editor.
-export EDITOR='vim';
 
 

@@ -1,4 +1,12 @@
 
+# Add `~/bin` to the `$PATH`
+if [ -d ~/bin ]; then
+	export PATH="$HOME/bin:$PATH";
+fi
+
+# Make vim the default editor.
+export EDITOR='vim';
+
 # composer
 if [ -d ~/.composer/vendor/bin ]; then
 	export PATH=~/.composer/vendor/bin:$PATH
