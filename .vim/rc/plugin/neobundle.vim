@@ -64,9 +64,12 @@ NeoBundle "pentie/VimRepress"
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kannokanno/previm'
 
+" Evernote
+NeoBundle 'kakkyz81/evervim'
+" NeoBundle 'neilagabriel/vim-geeknote'
 
-
-
+" gist
+NeoBundle 'lambdalisue/vim-gista'
 
 
 call neobundle#end()
