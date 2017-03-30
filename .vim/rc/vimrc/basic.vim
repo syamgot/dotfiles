@@ -53,5 +53,5 @@ set noundofile 								" undoファイルを作成しない
 set incsearch 								" インクリメンタルサーチを行う
 set ignorecase 								" 検索時に大文字小文字を無視する
 set smartcase 								" 検索文字に大文字がある場合は大文字小文字を区別
-set nohlsearch 								" 検索時にハイライト (hlsearch|nohlsearch)
+set hlsearch 								" 検索時にハイライト (hlsearch|nohlsearch)
 

@@ -1,14 +1,13 @@
 
 # ls
 if [ $OS = "OSX" ]; then
-	alias ls='ls -G'
+	alias ls='ls -G1p'
 elif [ $OS = "Linux" ]; then
-	alias ls='ls --color=auto' 
+	alias ls='ls --color=auto -1p' 
 fi
 alias ll='ls -l'
-alias la='ls -a'
-alias lla='ll -a'
-
+alias la='ll -a'
+alias lt='ll -tc'
 
 
 

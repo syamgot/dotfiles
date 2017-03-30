@@ -7,6 +7,10 @@
 "----------------------------------------
 
 
+if isdirectory(expand('~/.vim/bundle/evervim')) 
+
+
+
 
 let g:evervim_devtoken='S=s4:U=598ad:E=15e836ddc4c:C=1572bbcad80:P=1cd:A=en-devtoken:V=2:H=f23935a7cdefe065f3070d2a4806fffc'
 
@@ -21,3 +25,6 @@ nnoremap <silent> ,ec :<C-u>EvervimOpenClient<CR>
 
 let g:evervim_splitoption=''
 
+
+
+endif
