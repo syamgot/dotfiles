@@ -47,10 +47,10 @@ inoremap <Leader>= ========================================<CR>
 inoremap <Leader>- ----------------------------------------<CR>
 
 " 日付や時間を挿入する
-inoremap <Leader>date <C-r>=strftime('%Y/%m/%d')<CR>
+inoremap <Leader>date <C-r>=strftime('%Y/%m/%d(%a)')<CR>
 inoremap <Leader>time <C-r>=strftime('%H:%M:%S')<CR>
 inoremap <Leader>datetime <C-r>=strftime('%Y/%m/%d %H:%M:%S')<CR>
-
+inoremap <Leader>dd <C-r>=strftime('%Y%m%d')<CR>
 
 
 

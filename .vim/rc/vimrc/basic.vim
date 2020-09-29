@@ -30,8 +30,9 @@ set tabstop=4 								" タブ文字数
 set shiftwidth=4 							" シフト移動幅
 " set expandtab 							" タブの代わりに空白文字を挿入する
 set list 									" タブ文字、改行文字の表示  (list|noliset)
+set conceallevel=0 							" 構文属性 (:syn-conceal) のテキストを通常通り表示する
 
-" listで表示される文字を指定する
+" listで表示される文字(タブ、改行、空白など)を指定する
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:% 	
 
 " ----------------------------------------
@@ -44,7 +45,7 @@ set clipboard+=unnamed 						" ヤンクをクリップボードへ送り込む
 set nobackup 								" バックアップファイルを作成しない
 set noswapfile 								" スワップファイルを作成しない
 set noundofile 								" undoファイルを作成しない
-
+set nrformats="" 							" インクリメントする際にゼロパディングされた文字を8進数として扱わないようにする
 
 " ----------------------------------------
 " 検索

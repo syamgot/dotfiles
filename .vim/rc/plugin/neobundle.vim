@@ -24,13 +24,14 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " plugins
-NeoBundle 'Shougo/vimproc', {
-  \ 'build' : {
-    \ 'windows' : 'make -f make_mingw32.mak',
-    \ 'cygwin' : 'make -f make_cygwin.mak',
-    \ 'mac' : 'make -f make_mac.mak',
-    \ 'unix' : 'make -f make_unix.mak',
-  \ },
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
 \ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'
@@ -42,7 +43,7 @@ NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'thinca/vim-qfreplace'
 
 " editor
-NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'tpope/vim-markdown'
 NeoBundle 'tpope/vim-surround'
 
 " color schemes
@@ -53,23 +54,23 @@ NeoBundle 'jpo/vim-railscasts-theme'
 NeoBundle 'tomasr/molokai'
 
 " TweetVim
-NeoBundle 'basyura/TweetVim'
-NeoBundle 'tyru/open-browser.vim'
-NeoBundle 'basyura/twibill.vim'
+" NeoBundle 'basyura/TweetVim'
+" NeoBundle 'tyru/open-browser.vim'
+" NeoBundle 'basyura/twibill.vim'
 
 " VimRepress
-NeoBundle "pentie/VimRepress"
+" NeoBundle "pentie/VimRepress"
 
 " kannokanno/previm
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kannokanno/previm'
 
 " Evernote
-NeoBundle 'kakkyz81/evervim'
+" NeoBundle 'kakkyz81/evervim'
 " NeoBundle 'neilagabriel/vim-geeknote'
 
 " gist
-NeoBundle 'lambdalisue/vim-gista'
+" NeoBundle 'lambdalisue/vim-gista'
 
 
 call neobundle#end()

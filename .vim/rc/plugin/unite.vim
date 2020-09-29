@@ -23,6 +23,11 @@ nnoremap <silent> ,uu :<C-u>Unite buffer file_mru<CR>
 nnoremap <silent> ,ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
 " bookmark 
 nnoremap <silent> ,us :<C-u>Unite bookmark<CR>
+" add bookmark 
+nnoremap <silent> ,usa :<C-u>UniteBookmarkAdd<CR>
+
+
+
 
 " bookmarkをVimFilerで開く
 call unite#custom_default_action('source/bookmark/directory' , 'vimfiler')

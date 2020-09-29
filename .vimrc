@@ -1,6 +1,7 @@
 
 " color scheme setting
-let g:colors_name = 'jellybeans'
+let g:colors_name = 'solarized'
+
 
 
 
