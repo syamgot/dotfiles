@@ -3,14 +3,16 @@
 
 cd $HOME/dotfiles
 
-#
+# setup vim
 if [ ! -d '.vim/bundle' ]; then
 	mkdir -p .vim/bundle
 fi
 git clone https://github.com/Shougo/neobundle.vim .vim/bundle/neobundle.vim
 
 
-# 
+
+
+# setup colors
 if [ ! -d 'colors' ]; then
 	mkdir -p colors
 fi
