@@ -1,8 +1,6 @@
 #!/bin/sh
 
 
-cd $HOME/dotfiles
-
 # setup vim
 if [ ! -d '.vim/bundle' ]; then
 	mkdir -p .vim/bundle
