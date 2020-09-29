@@ -12,5 +12,12 @@ alias lt='ll -tc'
 alias vi='vim'
 
 
+# k8s
+alias kl='kubectl'
+alias kx='kubectx'
+alias kns='kubens'
+
+
+alias del='/bin/rm'
 
 
