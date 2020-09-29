@@ -18,4 +18,6 @@ git clone https://github.com/seebi/dircolors-solarized colors/dircolors-solarize
 
 
 
+ln -s ~/dotfiles/.zsh/.zshenv ~/.zshenv
+
 
