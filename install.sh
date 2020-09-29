@@ -20,4 +20,5 @@ git clone https://github.com/seebi/dircolors-solarized colors/dircolors-solarize
 
 ln -s ~/dotfiles/.zsh/.zshenv ~/.zshenv
 
+ln -s ~/dotfiles/.gitignore_global ~/.gitignore_global
 
