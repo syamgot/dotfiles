@@ -15,10 +15,15 @@ if [ ! -d 'colors' ]; then
 	mkdir -p colors
 fi
 git clone https://github.com/seebi/dircolors-solarized colors/dircolors-solarized
+ln -sf ~/dotfiles/colors/dircolors-solarized/dircolors.ansi-universal ~/dotfiles/.zsh/.dircolors
 
 
 
-ln -s ~/dotfiles/.zsh/.zshenv ~/.zshenv
+ln -sf ~/dotfiles/.zsh/.zshenv ~/.zshenv
+ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
+
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.vim ~/.vim
 
 ln -s ~/dotfiles/.gitignore_global ~/.gitignore_global
 
