@@ -1,6 +1,0 @@
-
-# mv2trash 
-if [ -x ~/bin/mv2trash ]; then
-	alias rm='~/bin/mv2trash'
-fi
-

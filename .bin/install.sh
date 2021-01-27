@@ -18,11 +18,11 @@ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 
 # setup colors
-if [ ! -d '~/dotfiles/colors' ]; then
-	mkdir -p ~/dotfiles/colors
-fi
-git clone https://github.com/seebi/dircolors-solarized colors/dircolors-solarized
-ln -sf ~/dotfiles/colors/dircolors-solarized/dircolors.ansi-universal ~/dotfiles/.zsh/.dircolors
+# if [ ! -d '~/dotfiles/colors' ]; then
+# 	mkdir -p ~/dotfiles/colors
+# fi
+# git clone https://github.com/seebi/dircolors-solarized colors/dircolors-solarized
+# ln -sf ~/dotfiles/colors/dircolors-solarized/dircolors.ansi-universal ~/dotfiles/.zsh/.dircolors
 
 
 

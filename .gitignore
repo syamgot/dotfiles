@@ -1,1 +1,3 @@
 .vim/bundle
+.zsh/.zcompcache
+.zcompdump
