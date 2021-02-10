@@ -1,15 +1,17 @@
 #!/bin/sh
 
+cd `dirname $0`
+CURRENT_DIR=`pwd`/..
 
 # zsh
-ln -sf ~/dotfiles/.zsh/.zshenv ~/.zshenv
+ln -sf $CURRENT_DIR/.zsh/.zshenv ~/.zshenv
 
 # git
-ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
+ln -sf $CURRENT_DIR/.gitignore_global ~/.gitignore_global
 
 # vim
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.vim ~/.vim
+ln -sf $CURRENT_DIR/.vimrc ~/.vimrc
+ln -sf $CURRENT_DIR/.vim ~/.vim
 
 if [ ! -d '~/.vim/bundle' ]; then
 	mkdir -p ~/.vim/bundle
