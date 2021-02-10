@@ -9,6 +9,9 @@ fi
 brew update & install \
 git \
 vim \
+nodebrew \
+wget \
+zsh-git-prompt \
 zsh-completions
 
 
