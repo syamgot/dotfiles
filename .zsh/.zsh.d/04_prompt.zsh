@@ -3,7 +3,7 @@
 export PROMPT='[%F{green}%~%f]'
 
 # olivierverdier/zsh-git-prompt
-if [ -f /usr/local/opt/kube-ps1/share/kube-ps1.sh ]; then
+if [ -f /usr/local/opt/zsh-git-prompt/zshrc.sh ]; then
 	source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 	ZSH_THEME_GIT_PROMPT_PREFIX="["
 	ZSH_THEME_GIT_PROMPT_SUFFIX=" ]"
