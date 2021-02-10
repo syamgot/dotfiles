@@ -22,3 +22,9 @@ if [ ! -f ~/dotfiles/bin/mv2trash ]; then
 	chmod a+x ~/dotfiles/bin/mv2trash
 fi
 
+# nodebrew
+if [ ! -f ~/.nodebrew ]; then
+	nodebrew setup
+	nodebrew install-binary v14.15.4
+	nodebrew use v14.15.4
+fi
