@@ -27,7 +27,7 @@ if [ ! -f ~/dotfiles/bin/mv2trash ]; then
 fi
 
 # nodebrew
-if [ ! -f ~/.nodebrew ]; then
+if [ ! -d ~/.nodebrew ]; then
 	nodebrew setup
 	nodebrew install-binary v14.15.4
 	nodebrew use v14.15.4
