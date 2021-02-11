@@ -1,23 +1,20 @@
 #!/bin/sh
 
-# get brew
-if !(type "brew" > /dev/null 2>&1); then
 cd `dirname $0`
 DOTFILES_DIR=`pwd`/..
 source $DOTFILES_DIR/bin/common
 
+# brew
+if doesnt_have brew; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	brew update & install \
+		git \
+		vim \
+		nodebrew \
+		wget \
+		zsh-git-prompt \
+		zsh-completions
 fi
-
-# brew install
-brew update & install \
-git \
-vim \
-nodebrew \
-wget \
-zsh-git-prompt \
-zsh-completions
-
 
 # mv2trash
 if doesnt_have mv2trash; then
