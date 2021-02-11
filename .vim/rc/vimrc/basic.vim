@@ -1,4 +1,12 @@
 
+
+" ----------------------------------------
+" 設定
+" ----------------------------------------
+set viminfo+=n~/.vim/tmp/.viminfo 			" viminfoファイル作成場所
+set directory=~/.vim/tmp					" swapファイル作成場所
+set backupdir=~/.vim/tmp					" バックアップファイル作成場所
+
 " ----------------------------------------
 " エンコーディング
 " ----------------------------------------
@@ -42,8 +50,8 @@ set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set noautoindent 							" オートインデント
 set backspace=2 							" 上行末尾の文字を1文字消去
 set clipboard+=unnamed 						" ヤンクをクリップボードへ送り込む
-set nobackup 								" バックアップファイルを作成しない
-set noswapfile 								" スワップファイルを作成しない
+" set nobackup 								" バックアップファイルを作成しない
+" set noswapfile 								" スワップファイルを作成しない
 set noundofile 								" undoファイルを作成しない
 set nrformats="" 							" インクリメントする際にゼロパディングされた文字を8進数として扱わないようにする
 
