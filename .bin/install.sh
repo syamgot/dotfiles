@@ -15,9 +15,8 @@ ln -sf $DOTFILES_DIR/.vim ~/.vim
 
 if [ ! -d '~/.vim/bundle' ]; then
 	mkdir -p ~/.vim/bundle
+	git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 fi
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-
 
 # setup colors
 # if [ ! -d '~/dotfiles/colors' ]; then
