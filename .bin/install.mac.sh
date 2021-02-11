@@ -9,15 +9,15 @@ if doesnt_have brew; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-brew update & install \
-git \
-vim \
-nodebrew \
-wget \
-zsh-git-prompt \
-zsh-completions \
-gradle \
-maven
+brew update
+brew install git
+brew install vim
+brew install nodebrew
+brew install wget
+brew install zsh-git-prompt
+brew install zsh-completions
+brew install gradle
+brew install maven
 
 # mv2trash
 if doesnt_have mv2trash; then
