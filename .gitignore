@@ -1,3 +1,4 @@
 .vim/bundle
 .zsh/.zcompcache
 .zcompdump
+.zsh/.zsh_sessions

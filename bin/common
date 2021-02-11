@@ -11,7 +11,7 @@ has() {
 
 doesnt_have() {
     is_exists "$@"
-	[ $? = 0 ]
+	[ $? -eq 1 ]
 }
 
 is_osx() {
