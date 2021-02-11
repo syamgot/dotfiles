@@ -2,3 +2,4 @@
 .zsh/.zcompcache
 .zcompdump
 .zsh/.zsh_sessions
+.vim/tmp

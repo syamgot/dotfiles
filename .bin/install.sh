@@ -13,11 +13,9 @@ ln -sf $DOTFILES_DIR/.gitignore_global ~/.gitignore_global
 # vim
 ln -sf $DOTFILES_DIR/.vimrc ~/.vimrc
 ln -sf $DOTFILES_DIR/.vim ~/.vim
+[ ! -d '~/.vim/tmp' ] && mkdir -p ~/.vim/tmp
+[ ! -d '~/.vim/bundle' ] && mkdir -p ~/.vim/bundle & git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
-if [ ! -d '~/.vim/bundle' ]; then
-	mkdir -p ~/.vim/bundle
-	git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-fi
 
 # setup colors
 # if [ ! -d '~/dotfiles/colors' ]; then
@@ -26,7 +24,5 @@ fi
 # git clone https://github.com/seebi/dircolors-solarized colors/dircolors-solarized
 # ln -sf ~/dotfiles/colors/dircolors-solarized/dircolors.ansi-universal ~/dotfiles/.zsh/.dircolors
 
-if is_osx; then
-  source ~/dotfiles/.bin/install.mac.sh
-fi
+is_osx && source ~/dotfiles/.bin/install.mac.sh
 
