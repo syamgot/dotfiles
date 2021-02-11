@@ -7,14 +7,17 @@ source $DOTFILES_DIR/bin/common
 # brew
 if doesnt_have brew; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-	brew update & install \
-		git \
-		vim \
-		nodebrew \
-		wget \
-		zsh-git-prompt \
-		zsh-completions
 fi
+
+brew update & install \
+git \
+vim \
+nodebrew \
+wget \
+zsh-git-prompt \
+zsh-completions \
+gradle \
+maven
 
 # mv2trash
 if doesnt_have mv2trash; then
@@ -28,3 +31,12 @@ if [ ! -d ~/.nodebrew ]; then
 	nodebrew install-binary v14.15.4
 	nodebrew use v14.15.4
 fi
+
+# SDKMAN!
+if [ ! -d ~/.sdkman ]; then
+	curl -s "https://get.sdkman.io" | bash
+	source "$HOME/.sdkman/bin/sdkman-init.sh"
+	sdk install java 11.0.2-open
+	sdk use java 11.0.2-open
+fi
+
