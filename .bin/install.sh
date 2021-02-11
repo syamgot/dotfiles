@@ -2,6 +2,7 @@
 
 cd `dirname $0`
 DOTFILES_DIR=`pwd`/..
+source $DOTFILES_DIR/bin/common
 
 # zsh
 ln -sf $DOTFILES_DIR/.zsh/.zshenv ~/.zshenv
@@ -25,11 +26,7 @@ fi
 # git clone https://github.com/seebi/dircolors-solarized colors/dircolors-solarized
 # ln -sf ~/dotfiles/colors/dircolors-solarized/dircolors.ansi-universal ~/dotfiles/.zsh/.dircolors
 
-
-
-# ls
-if [ "$(uname)" = 'Darwin' ]; then
-	. ~/dotfiles/.bin/install.mac.sh
-elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+if is_osx; then
+  source ~/dotfiles/.bin/install.mac.sh
 fi
 
