@@ -2,6 +2,10 @@
 
 # get brew
 if !(type "brew" > /dev/null 2>&1); then
+cd `dirname $0`
+DOTFILES_DIR=`pwd`/..
+source $DOTFILES_DIR/bin/common
+
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
