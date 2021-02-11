@@ -20,10 +20,9 @@ zsh-completions
 
 
 # mv2trash
-if [ ! -f ~/dotfiles/bin/mv2trash ]; then
-	echo "download mv2trash!"
-	curl -L https://raw.githubusercontent.com/dankogai/osx-mv2trash/master/bin/mv2trash > ~/dotfiles/bin/mv2trash
-	chmod a+x ~/dotfiles/bin/mv2trash
+if doesnt_have mv2trash; then
+	curl -sL https://raw.githubusercontent.com/dankogai/osx-mv2trash/master/bin/mv2trash > $DOTFILES_DIR/bin/mv2trash
+	chmod a+x $DOTFILES_DIR/bin/mv2trash
 fi
 
 # nodebrew
