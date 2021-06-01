@@ -16,6 +16,8 @@ ln -sf $DOTFILES_DIR/.vim ~/.vim
 [ ! -d '~/.vim/tmp' ] && mkdir -p ~/.vim/tmp
 [ ! -d '~/.vim/bundle' ] && mkdir -p ~/.vim/bundle & git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
+# tmux
+ln -sf ~/dotfiles/.tmux.conf
 
 # setup colors
 # if [ ! -d '~/dotfiles/colors' ]; then

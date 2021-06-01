@@ -32,3 +32,5 @@ alias del='/bin/rm'
 alias curl_header='curl -D - -s -o /dev/null'
 
 
+alias tls='tmux ls'
+alias ta='tmux attach'

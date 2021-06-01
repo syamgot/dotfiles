@@ -18,6 +18,9 @@ brew install zsh-git-prompt
 brew install zsh-completions
 brew install gradle
 brew install maven
+brew install tmux
+brew install reattach-to-user-namespace
+brew install tree
 
 # mv2trash
 if doesnt_have mv2trash; then
