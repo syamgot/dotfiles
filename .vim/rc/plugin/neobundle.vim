@@ -45,6 +45,7 @@ NeoBundle 'thinca/vim-qfreplace'
 " editor
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'junegunn/vim-easy-align'
 
 " color schemes
 NeoBundle 'altercation/vim-colors-solarized'
