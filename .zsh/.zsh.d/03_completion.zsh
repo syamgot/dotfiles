@@ -15,3 +15,7 @@ zstyle ':completion::complete:*' use-cache true 		# キャッシュの利用に�
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 	# 大文字、小文字を区別せず補完する
 setopt list_packed 										# 補完リストの表示間隔を狭くする
 
+
+# rbenv
+[ -f ~/.rbenv/completions/rbenv.zsh ] && source ~/.rbenv/completions/rbenv.zsh
+
