@@ -21,6 +21,7 @@ brew install maven
 brew install tmux
 brew install reattach-to-user-namespace
 brew install tree
+brew install pyenv
 
 # mv2trash
 if doesnt_have mv2trash; then
