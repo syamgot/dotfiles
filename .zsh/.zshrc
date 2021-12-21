@@ -10,3 +10,10 @@ eval "$(rbenv init -)"
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/shims:$PATH"
 # eval "$(pyenv init -)"
+
+
+# zsh起動時にtmuxを起動する
+if type "tmux" > /dev/null 2>&1; then
+	[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+fi
+
