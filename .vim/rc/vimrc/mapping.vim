@@ -70,4 +70,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 
+" 常に表示行で移動する
+noremap j gj
+noremap k gk
+
+
 
