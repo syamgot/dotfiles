@@ -1,0 +1,17 @@
+#!/bin/zsh
+
+# Homebrew setup
+if [ -f "/opt/homebrew/bin/brew" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# mise (replaces rbenv, pyenv, nodebrew, sdkman)
+eval "$(mise activate zsh)"
+
+for f in ~/.zsh/.zsh.d/[0-9]*.(sh|zsh); do source "$f"; done
+
+# zsh起動時にtmuxを起動する
+if type "tmux" > /dev/null 2>&1; then
+	[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+fi
+

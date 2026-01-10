@@ -2,7 +2,7 @@
 
 
 # Make vim the default editor.
-export EDITOR='vim';
+export EDITOR='nvim';
 
 
 
@@ -37,10 +37,10 @@ bindkey "^N" history-beginning-search-forward-end
 # SPROMPT="correct: $RED%R$DEFAULT -> $GREEN%r$DEFAULT ? [Yes/No/Abort/Edit] => "
 
 # global install した npm ライブラリのパスを通す
-export NODE_PATH=`npm root -g`
-
-
-if [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
-	source "$HOME/.sdkman/bin/sdkman-init.sh"
+if command -v npm >/dev/null 2>&1; then
+  export NODE_PATH=`npm root -g`
 fi
+
+
+
 

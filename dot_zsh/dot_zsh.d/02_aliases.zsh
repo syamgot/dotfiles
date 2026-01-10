@@ -11,7 +11,8 @@ if [ -x ~/bin/mv2trash ]; then
 	alias rm='~/bin/mv2trash'
 fi
 
-
+alias vim='nvim'
+alias vi='nvim'
 
 alias ll='ls -l'
 alias la='ll -a'

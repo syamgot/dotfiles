@@ -1,0 +1,6 @@
+.git
+.gitignore
+install.sh
+README.md
+LICENSE
+neovim_guide.md
