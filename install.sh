@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DOTFILES_DIR="$HOME/dotfiles"
 
 # Install Homebrew if not found
 if ! command -v brew >/dev/null 2>&1; then
@@ -23,6 +23,12 @@ if ! command -v brew >/dev/null 2>&1; then
   elif [ -f "/usr/local/bin/brew" ]; then
     eval "$(/usr/local/bin/brew shellenv)"
   fi
+fi
+
+# Clone dotfiles if not already cloned
+if [ ! -d "$DOTFILES_DIR" ]; then
+  echo "Cloning dotfiles repository..."
+  git clone https://github.com/syamgot/dotfiles.git "$DOTFILES_DIR"
 fi
 
 # Install prerequisites
